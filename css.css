@@ -1,0 +1,458 @@
+:root{
+  --body-bg:#C8C0B7;
+  --body-color: #872341;
+  --bg-black: #872341;
+  --color-white: #C8C0B7;
+  --tam-fonte: 1rem;
+}
+.dark-mode:root{
+  --body-bg:#1B1B19;
+  --body-color: #C8C0B7;
+  --bg-black: #C8C0B7;
+  --color-white: #1B1B19;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--body-bg);
+    color: var(--body-color);
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: var(--tam-fonte);
+}
+
+.offcanvas-bottom{
+  background-color: var(--body-bg);
+}
+@font-face{
+    font-family: fonte;
+    src: url(JMH\ Typewriter-Bold.ttf);
+}
+.fonte{
+    font-family: fonte;
+}
+.hfonte{
+    font-size: clamp(1.70em, 4em, 5vw);
+}
+
+.line{
+  border-right: 2px solid white;
+  font-family: fonte;
+  text-align: center;
+  font-size: 25vh;
+  width: fit-content;
+  white-space: nowrap; /*para não quebrar linha*/
+  overflow: hidden;
+  
+}
+
+.typing-animation{
+  animation: blinkCursor steps(40) 500ms infinite normal,
+   typing 4s steps(40) 1s/* < delay*/ normal both;
+}
+@keyframes typing{
+  from{
+    width: 0;
+  }
+  to{
+    width: 6.5em;
+  }
+}
+@keyframes blinkCursor{
+  from{
+    border-right-color: white;
+  }
+  to{
+    border-right-color:transparent ;
+  }
+}
+.row p:nth-child(2){
+animation: typing 8s steps(60, end);
+}
+.navbar{
+  border-bottom: 1px solid black;
+  background-color: var(--body-bg);
+}
+.offcanvas{
+  height: 100vh !important;
+  color: var(--body-color);
+}
+.meio{
+  border-left: 1px solid black ;
+  border-right: 1px solid black ;
+}
+.imagens1{
+  width: 100%;
+  object-fit: cover;
+}
+.imagem2{
+  width: 80%;
+  object-fit: cover;
+}
+.imagem3{
+  width: 90%;
+  object-fit: cover;
+}
+.t60{
+	height:60vh;
+}
+.t30{
+	height:35vh;
+}
+.textogrande{
+  background-color:var(--bg-black);
+  height: fit-content;
+  color: var(--color-white);
+  width: 100vw;
+}
+.largura-95{
+  width: 95%;
+}
+.textogrande2{
+  height: fit-content;
+  width: 100vw;
+}
+.navbar-brand{
+  color: black!important;
+}
+
+.oito{
+  font-size: 8vh;
+  transform: scaleX(0.9);
+}
+.doze{
+  font-size: 12vh;
+}
+.nove{
+  font-size: 9vh;
+}
+.tres{
+  font-size: 3vh;
+}
+.oito{
+  font-size: 8vh;
+}
+.seis{
+  font-size: 6vh;
+}
+.vinte{
+  width: fit-content;
+  font-size:12.5rem;
+  
+}
+.vintecinco{
+  font-size: 13vw;
+}
+.bordadireita{
+  border-right: 1px black solid;
+}
+.bordaesquerda{
+  border-left: 1px black solid;
+}
+.bordacima{
+  border-top: 1px black solid;
+}
+.bordabaixo{
+  border-bottom: 1px black solid;
+}
+.inicio{
+  background-color: var(--bg-black);
+  color: var(--color-white);
+  font-family: fonte;
+  font-size: 8vh;
+  height: fit-content;
+  float:left;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.principal{
+height: fit-content;
+text-align:justify;
+padding:10px;
+}
+.navbar-toggler-icon{
+background-image:url(https://static.thenounproject.com/png/1208162-200.png) ;
+}
+.offcanvas-body{
+overflow: hidden;
+}
+/*
+*{
+border: yellow 1px solid;
+}*/
+.oposto{
+  background-color: black;
+  color:#C8C0B7 ;
+}
+.umquarto{
+  width: 25%;
+}
+.penultima{
+  transform: scale(1,1.5);
+}
+.container-horizontal{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.container-horizontal section{
+  min-width: 100%;
+  height: auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fffee1;
+}
+.container-horizontal section:nth-child(2){
+  background-color: #e2fcff;
+}
+.container-horizontal section:nth-child(3){
+  background-color: #d0eaff;
+}
+.container-horizontal section:nth-child(4){
+  background-color: #fce8f4;
+}
+.container-horizontal section .content{
+  max-width: 800px;
+  padding: 40px;
+  text-align: center;
+}
+.container-horizontal section .content h2{
+  font-size: 4em;
+  color: #111;
+}
+.caixa{
+  width: 100%;
+  height: fit-content;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+  border-right: 1px black solid;
+  border-left: 1px black solid;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC');
+
+
+
+/* 
+layout
+*/
+
+/* 
+Counters 
+*/
+
+.menu ol { 
+  counter-reset:menu;
+}
+
+
+
+/*
+Regular menu items
+*/
+
+.menu-item a {
+  display:flex;
+  justify-content:flex-start; /*shrink towards text*/
+  color:currentColor;
+  text-decoration:none;
+  padding:0.3rem 0; /* avoid flickin' */
+  order:0;
+}
+
+.menu-item a::before { /* dots */
+  content:"";
+  display:block;
+  border-bottom:1px dotted black;
+  flex:1 1 auto;
+  margin:0 1rem;
+  order:1;
+}
+
+.menu-item a::after { /* item ids */
+  counter-increment:menu;
+  content:counters(menu, ".");
+  flex:0 0 auto;
+  order:2;
+  text-decoration:underline;
+}
+
+
+
+/* 
+Sub menu & items
+*/
+
+.sub-menu {
+  font-size:1.6rem;
+  font-weight:normal;
+}
+
+.sub-menu > li > a {
+  text-indent:0ch; /*
+    Chrome indentS the "dots" elm, i.e. it counts pseudo-elm.
+    FF and Edge indents first non pseudo-elm. 
+    Turn it off for consistency.
+  */
+  padding:0.5rem 0 0.5rem 2ch;
+  margin:0;
+}
+
+
+
+/*
+Main menu
+*/
+
+.menu {
+  width:fit-content;
+  min-width:20ch;
+  display:flex;
+  flex-flow:column nowrap;
+  font:bold 2.4rem/1 'IM Fell English SC', serif;
+  position:relative;
+  
+}
+
+.menu::before {
+  content:"...";
+  align-self:center;
+  margin-bottom:1rem;
+}
+
+.menu::after {
+  content:"...";
+  align-self:center;
+  margin-top:1rem;
+}
+
+
+
+/*
+Fx
+*/
+
+.menu { transition:transform 0.3s; }
+
+
+.menu::before { transition:transform 0.5s; }
+.menu::after { transition:transform 0.5s; }
+
+.menu .menu-item a::after { transition:transform 0.3s }
+
+.menu:hover > ol > .menu-item { opacity:0.3; }
+
+.menu-item:hover {
+  transition:background-color 0.3s;
+  background:rgba(255,255,0,0.15);
+  opacity:1 !important;
+}
+
+.menu-item:hover a::after {
+  text-decoration:none;
+}
+
+.menu-item:hover > a::before {
+  transition:flex-grow 0.3s;
+  width:0; flex-grow:0;
+  transform-origin:center bottom;
+}
+
+/*
+Collapse
+*/
+
+.sub-menu > .menu-item {
+  max-height:1ch;
+  transform:scaleY(0.1);
+  transform-origin:center top;
+  transition:transform 0.2s, max-height 0.5s;
+}
+
+.menu:hover .sub-menu .menu-item {
+  max-height:10em;
+  transform:scaleY(1);
+}
+
+/*botao noturno*/
+
+/* The switch - the box around the slider */
+#theme-toggle-button {
+  font-size: 17px;
+  position:relative;
+  display: inline-block;
+  width: 3em;
+  cursor: pointer;
+}
+
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+svg.girar{
+  transform: rotate(180deg);
+  transform-origin: center center;
+  fill: #C8C0B7;
+}
+svg:not(.girar){
+  fill: #000;
+}
+
+
+/*fim do botao*/
+
+.tamanhofixo{
+  font-size: 1rem;
+}
+
+.ml-6{
+  margin-left: 6px;
+}
+ .normalfonte{
+  font-size: 1rem;
+ }
+ a{
+  color: #872341;
+ }
+ a:hover{
+  color: #2b4360;
+ }
+ img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE */
+}
+b{
+font-weight:bold;
+font-size:1.2rem;
+}
+#botaoaumentafonte, #botaodiminuefonte, #fontenormal{
+	border:0;
+	background-color:var(--body-bg) ;
+}

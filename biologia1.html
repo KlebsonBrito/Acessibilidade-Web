@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biologia1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="css.css" rel="stylesheet">
+</head>
+<body>
+  
+    <div class="row mt-5">
+      <div class="navbar navbar-dark fixed-top justify-content-between">
+      
+      <!--<label for="switch">
+        <input type="checkbox" id="switch"> darkmode
+      </label>-->
+    <span class="d-flex tamanhofixo" tabindex="0">
+      <svg class="animado ml-6" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" title="Contraste" aria-label="Botão de Contraste"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+  
+      <div id="botaoaumentafonte" class="ml-6" title="Aumentar fonte" aria-label="Aumentar fonte"> A+ </div>
+      <div id="botaodiminuefonte" class="ml-6" title="Diminuir fonte" aria-label="Diminuir fonte"> A- </div>
+      <div id="fontenormal" class="ml-6" title="Fonte normal" aria-label="Fonte normal"> A </div>
+    </span>
+      <span class="fonte tres">PPA 631</span>
+      <button  class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="#offcanvasBottom" aria-label="menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header d-flex justify-content-center">
+          <nav class="menu">
+            <ol> 
+              <li class="menu-item"><a href="paginainicial.html">Home</a></li>
+             <!--Biologia1-->
+              <li class="menu-item">
+                <a href="biologia1.html">Experiências médicas nazistas-questôes éticas e científicas</a>
+                <ol class="sub-menu">
+                  <li class="menu-item"><a href="#0">O papel da medicina durante o holocausto nazista</a></li>
+                 
+                </ol>
+              </li>
+               <!--Biologia2-->
+              <li class="menu-item">
+                <a href="biologia2.html">Higienismo como uma prática eugênica no Brasil</a>
+                <ol class="sub-menu">
+                  <li class="menu-item"><a href="#0">Higienismo na Educação Física</a></li>
+                  
+                </ol>
+              </li>
+               
+               <!--Filosofia-->
+               <li class="menu-item">
+                <a href="filosofia.html">Uso da propaganda como forma de alienação no Holocausto</a>
+                <ol class="sub-menu">
+                  <li class="menu-item"><a href="#0">Produções cinematográficas, livros e cartazes</a></li>
+                  
+                </ol>
+              </li>
+               <!--História-->
+               <li class="menu-item">
+                <a href="historia.html">Cotidiano nos campos de concentração</a>
+                <ol class="sub-menu">
+                  <li class="menu-item"><a href="#0">Experimentos Realizados</a></li>
+                  <li class="menu-item"><a href="#0">Cotidiano dos judeus</a></li>
+                  
+                </ol>
+              </li>
+              <!--Midia-->
+              <li class="menu-item">
+                <a href="midia.html">Mídias utilizadas no desenvolvimento</a>
+                <ol class="sub-menu">
+                  <li class="menu-item"><a href="#0">Filmes, séries e dentre outros</a></li>
+                
+                </ol>
+              </li>
+            </ol>
+          </nav>
+      </div>
+    </div>
+    </div>
+      <!--começo da primeira dobra-->
+      <div class="row mt-3 fonte bordabaixo ">
+        
+        <div class="col-12 text-center fonte seis">
+          EXPERIÊNCIAS MÉDICAS NAZISTAS
+        </div>
+       
+      </div>
+      <div class="row mt-1">
+        <div class="col-12 bordacima bordabaixo text-center fonte pt-3">
+          
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col-12 bordabaixo text-center fonte seis">
+            QUESTÕES ÉTICAS E CIENTÍFICAS
+        </div>
+      </div>
+      <div class="row mt-3 bordabaixo">
+        <div class="col-3">
+         <span class="fonte seis text-uppercase">Ética na Medicina</span><br>
+         <img class="imagens1" src="data:image/jpeg;base64,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" alt=""><br>
+				O código de ética da medicina é um conjunto de regras fundamentado nos valores morais da comunidade, visando garantir direitos humanos como dignidade, justiça médica e responsabilidade dos profissionais de saúde. Originado no juramento de Hipócrates em 430 a.C., tornou-se oficial em 1803 pelas mãos de Thomas Percival. No século XX, o Código de Nuremberg, estabelecido em 1947 após a Segunda Guerra Mundial, reforçou princípios éticos rigorosos na pesquisa médica, destacando a necessidade de consentimento e respeito aos direitos humanos. Este código permanece como um pilar na ética médica, lembrando a importância de preservar a integridade e os direitos humanos na pesquisa médica e evitar repetição de erros do passado.
+        </div>
+        <div class="col-6 meio text-center">
+          <img class="imagem3" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/BD19/production/_108090484_9501dac8-76d5-49c4-b687-5ecaf6632d40.jpg" alt=""> <br>
+          <span class="fonte seis text-uppercase">O Papel da Medicina Durante o Holocausto Nazista </span><br>
+        Durante o regime nazista, que ocorreu sob a liderança de Adolf Hitler na Alemanha
+		entre 1933 e 1945, a medicina foi indevidamente usada para justificar, realizar e legitimar
+		atos cruéis. O Holocausto nazista, foi caracterizado pelo genocídio e pela perseguição
+		sistemática de judeus e outros grupos minoritários que foram considerados indesejáveis,
+		sendo vítimas de incessantes atos desumanos. Esse sombrio capítulo da história resultou no
+		assassinato e tortura de milhões de pessoas que eram mantidas em campos de concentração,
+		além da realização de experimentos médicos desumanos.
+		Muitos profissionais da saúde que juraram cuidar e curar usaram seus conhecimentos
+		para perpetrar tortura e morte, com a participação ativa de médicos nazistas na seleção de
+		prisioneiros para execução, administração de câmaras de gás e realização de experimentos
+		perversos. A "medicina nazista" não só feriu fisicamente as vítimas, mas também infringiu os
+		valores fundamentais da ética, abalando a confiança da população nesta área.
+        </div>
+        <div class="col-3">
+         <span class="fonte seis text-uppercase">A bioética</span> <br>
+        Na segunda metade do século XX, a bioética surgiu influenciada pelo contexto sociocultural dos anos 1960, marcado por movimentos culturais e políticos que enfatizavam justiça, igualdade e direitos individuais. Críticas ao paternalismo médico e abusos em experimentação humana também contribuíram. O rápido avanço científico e biotecnológico, conhecido como "nova biologia" ou "revolução biomédica", possibilitou intervenções mais eficazes no corpo humano, levantando questões éticas sobre reprodução e hereditariedade. A bioética emergiu como uma disciplina interdisciplinar para abordar questões éticas nas ciências biomédicas, equilibrando conhecimento científico com valores humanos. Fritz Jahr e Van Rensselaer Potter introduziram o termo "bioética" nas décadas de 1920 e 1970, respectivamente. Apesar de debates sobre sua natureza disciplinar, a bioética ganhou relevância com o estabelecimento de comissões governamentais nos EUA. Atualmente, a bioética baseia-se em três pilares: aprovação pelos pares, consentimento informado do sujeito de pesquisa e confidencialidade das informações do paciente.
+        </div>
+      </div>
+      <!--dobra-->
+      <div class="row mt-1">
+        <div class="col-12 bordabaixo text-center fonte seis text-uppercase">
+            Experiências nazistas em humanos
+        </div>
+      <div class="row mt-3">
+        <div class="col-3 ">
+         <div class=""> 
+            <span class="fonte tres text-uppercase">Experimentos sobre congelamento</span><br><br>
+			<b>Período:</b> em 1941, mas só foi divulgado os resultados no ano de 1942<br>
+			<b>Responsável:</b> A Luftwaffe (ramo aéreo da Wehrmacht durante a Alemanha
+			Nazi)<br>
+			<b>Histórico:</b> Divulgada na conferência de médicos intitulada “Problemas
+			Médicos Decorrentes do Mar e do Inverno”. O principal responsável por esse
+			experimento foi o médico alemão chamado Sigmund Rascher, essa experiência
+			trata sobre como os nazistas queriam tratar a hipotermia, os experimentos
+			foram conduzidos em homens para saber qual a menor temperatura corporal o
+			ser humano conseguiria chegar, além de saber como reanimar vítimas de
+			congelamento.<br>
+			<b>Procedimento:</b> As vítimas eram forçadas a ficarem em um tanque de água
+			gelada por 3 horas ou mais, em outro experimentos prisioneiros foram
+			expostos a temperaturas abaixo de zero graus Celsius por várias horas.
+         </div>
+        </div>
+         <div class="col-3">
+         <div class=""> 
+            <span class="fonte tres text-uppercase"> Experimentos com gêmeos</span><br><br>
+			<b>Período:</b> Durante a Segunda Guerra Mundial, entre os anos de 1943 e 1944<br>
+			<b>Responsável:</b> O médico ex-Dr Josef Mengele<br>
+			<b>Histórico:</b> Essa experiência visava saber como o corpo humano podia ser
+			manipulado, além de analisar as semelhanças e diferenças na genética dos
+			gêmeos. Mengele foi o principal médico e investigador no Campo de
+			concentração de Auschwitz, na Polônia, em maio de 1943.<br>
+			<b>Procedimento:</b> Foram realizados diversos experimentos, entre os quais havia
+			um exemplificado por injetar em cada um dos olhos dos gêmeos produtos
+			químicos distintos com o objetivo de ver se haveria mudança em suas cores,
+			outra experiência que os médicos fizeram foi costura-los para tentar obter
+			gêmeos siameses.
+         </div>
+        </div>
+         <div class="col-3">
+         <div class=""> 
+            <span class="fonte tres text-uppercase">Experimentos sobre Esterilização</span><br><br>
+			<b>Período:</b> Conduzidos entre os anos de 1941 e janeiro de 1945<br>
+			<b>Responsável:</b> Dr. Carl Clauberg<br>
+			<b>Histórico:</b> Esses experimentos foram realizados por meio de raios-X, cirurgias
+			e diversas drogas. O objetivo era criar um método eficiente de esterilização em
+			massa que pudesse ser aplicado com o mínimo de esforço e tempo necessário.<br>
+			<b>Procedimento:</b>
+			A radiação era o tratamento favorito para a esterilização, os prisioneiros eram
+			enganados para receber a radiação, eram levados a uma sala e convidados a
+			preencher formulários que levavam de dois a três minutos. Depois disso eles
+			foram expostos à radiação, achando que estavam passando por sessões de raio
+			X.
+         </div>
+        </div>
+         <div class="col-3">
+         <div class=""> 
+            <span class="fonte tres text-uppercase"> Experimentos com tifo</span><br><br>
+		<b>Período:</b> Entre 1941 e 1945<br>
+		<b>Responsável:</b> O ex-médico Erwin Ding-Schuler<br>
+		<b>Histórico:</b> O objetivo deste experimento era investigar a ineficiência de
+		medicamentos e vacinas através da infecção de detentos saudáveis. Foram
+		realizados testes para febre amarela, varíola, tifo, cólera, dentre outros. Tais
+		experimentos levaram à morte de diversos prisioneiros.<br>
+		<b>Procedimento:</b> Para isso, faziam testes que envolviam a infecção de
+		prisioneiros com a bactéria causadora do tifo, após isto, faziam testes de
+		diferentes medicamentos e técnicas de tratamento. Os prisioneiros eram
+		submetidos a condições desumanas, incluindo a privação de alimentos e água,
+		consequentemente, muitos deles morriam adoecidos ou em decorrência das
+		torturas feitas pelos nazistas.
+         </div>
+        </div>
+        
+
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+/*
+      const $html = document.querySelector('html');
+      const $checkbox = document.querySelector('#toggle');
+      $checkbox.addEventListener('change', function() {
+        $html.classList.toggle('dark-mode');
+      })
+*/
+      var modo = window.localStorage.getItem('modo');
+      if (modo == 'dark')
+      {
+        $('svg.animado').toggleClass('girar');
+        $('html').toggleClass('dark-mode');
+      }
+
+      $('svg.animado').on('click',(e)=>{
+        $(e.currentTarget).toggleClass('girar');
+        if ($(e.currentTarget).hasClass('girar'))
+          window.localStorage.setItem('modo','dark');
+        else
+          window.localStorage.setItem('modo','light');
+        $('html').toggleClass('dark-mode');
+      });
+
+      $('#botaoaumentafonte').on('click',(e)=>{
+        tam = parseFloat($(':root').css("--tam-fonte"));
+        tam = tam * 1.2;
+        $(':root').css("--tam-fonte",tam+'rem');
+
+        window.localStorage.setItem('tamanho',tam);
+
+      });
+
+      $('#botaodiminuefonte').on('click',(e)=>{
+        tam = parseFloat($(':root').css("--tam-fonte"));
+        tam = tam / 1.2;
+        $(':root').css("--tam-fonte",tam+'rem');
+
+        window.localStorage.setItem('tamanho',tam);
+
+      });
+
+      $('#fontenormal').on('click',(e)=>{
+        tam = parseFloat($(':root').css("--tam-fonte"));
+        tam = '1rem';
+        $(':root').css("--tam-fonte",tam+'rem');
+
+        window.localStorage.setItem('tamanho',tam);
+
+      });
+
+    </script>
+</body>
+</html>
